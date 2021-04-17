@@ -1,0 +1,11 @@
+{
+  "name": "gql-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "vsantis",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "api"
+  ]
+}
