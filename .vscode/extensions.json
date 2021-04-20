@@ -9,6 +9,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "visualstudioexptteam.vscodeintellicode",
-    "gruntfuggly.todo-tree"
+    "gruntfuggly.todo-tree",
+    "graphql.vscode-graphql"
   ]
 }

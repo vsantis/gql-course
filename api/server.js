@@ -42,3 +42,19 @@ const apolloServer = new ApolloServer({
 
 // link apollo server with express framework
 apolloServer.applyMiddleware({ app });
+
+// server
+const httpServer = http.createServer(app);
+
+// rest endpoint
+app.get('/ping', (req, res, next) => {
+  res.status(200).send('pong');
+});
+
+// port
+app.listen(process.env.PORT, () => {
+  console.log(`server is ready at http://localhost:${process.env.PORT}`);
+  console.log(
+    `graphql server is ready at http://localhost:${process.env.PORT}${apolloServer.graphqlPath}`
+  );
+});
